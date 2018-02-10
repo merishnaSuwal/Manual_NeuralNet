@@ -1,5 +1,7 @@
 import numpy as np
 
+#Operations
+
 class Operation():
     def __init__(self,input_nodes=[]):
         self.input_nodes =input_nodes
@@ -37,3 +39,22 @@ class matmul(Operation):
     def compute(self,  x1, y1):
         self.inputs = [ x1, y1]
         return x1.dot(y1)
+
+#Placeholfer
+
+class Placeholder():
+
+    def __init__(self):
+        self.output_nodes = []
+
+        _default_graph.placeholders.append(self)
+
+#Variables
+
+
+class Variablles():
+
+    def __init__(self):
+        self.output_nodes = []
+
+        _default_graph.variables.append(self)
