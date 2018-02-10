@@ -130,6 +130,21 @@ y = multiply(A,x)
 z = add(y,b)
 
 
+# ## For matrix multiplication
+#
+# g = Graph()
+#
+# g.set_as_default()
+#
+# A = Variable([[10,20],[30,40]])
+# b = Variable([1,1])
+#
+# x = Placeholder()
+#
+# y = matmul(A,x)
+#
+# z = add(y,b)
+
 sess = Session()
 result = sess.run(operation=z,feed_dict={x:10})
 print (result)
