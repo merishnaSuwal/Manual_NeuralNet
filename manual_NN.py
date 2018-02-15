@@ -89,7 +89,7 @@ def traverse_postorder(operation):
     return nodes_postorder
 
 
-class Session:
+class Session():
 
     def run(self, operation, feed_dict={}):
 
